@@ -1,0 +1,7 @@
+{
+  "name": "TaskFlow Material You",
+  "description": "A modern, high-performance To-Do application built with React and Tailwind CSS, featuring Android-inspired Material Design 3 (Material You) aesthetics, full task management, persistence, and smooth animations.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}

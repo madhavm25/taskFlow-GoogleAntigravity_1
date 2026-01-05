@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Material You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              accent: 'var(--color-accent)',
+              'accent-tonal': 'var(--color-accent-tonal)',
+              'accent-tonal-heavy': 'var(--color-accent-tonal-heavy)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+          }
+        }
+      }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-accent: #4f46e5;
+            --color-accent-tonal: rgba(79, 70, 229, 0.1);
+            --color-accent-tonal-heavy: rgba(79, 70, 229, 0.2);
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #475569;
+        }
+        * {
+            transition: background-color 0.2s ease, border-color 0.2s ease;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0",
+    "@/": "./"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-neutral-50 dark:bg-neutral-900 transition-colors duration-300">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
